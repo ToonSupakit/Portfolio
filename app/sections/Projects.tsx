@@ -30,16 +30,14 @@ const projects = [
       "Port Remediation & Rate Limiting: Executes automated or manual port bounces (shutdown/no shutdown) and rate limits on Cisco routers and switches using Netmiko.",
       "Config Backup & Diff Engine: Saves running configurations and features a Git-like comparison tool to view config changes over time.",
       "Real-time Dashboard: Built a Flask-based interface with Socket.IO to display device metrics and syslog state changes as they occur.",
-      "Centralized Translation: Implemented a translation engine inside the dashboard to support switching between English and Thai.",
-      "Dockerized Deployment: Configured a Docker Compose setup inside a VMware Ubuntu VM to handle database persistence and avoid hypervisor conflicts on host machines.",
-      "Security & Testing: Implemented role-based authentication (Admin/User), CSRF verification, and wrote automated unit tests using pytest."
+      "Dockerized Deployment: Configured a Docker Compose setup inside a VMware Ubuntu VM to handle database persistence",
     ],
     tools: [
       "Programming: Python, JavaScript, HTML5, CSS3",
       "Machine Learning: Scikit-learn (Isolation Forest)",
-      "Network & Automation: Netmiko, SNMP (PySNMP)",
+      "Network & Automation: Netmiko, SNMP",
       "Web & Database: Flask (Flask-SocketIO), MySQL",
-      "DevOps & Environments: Docker, Docker Compose, Ubuntu Linux, VMware Workstation"
+      "Environments: Docker, Docker Compose, Ubuntu Linux, VMware Workstation"
     ],
     githubUrl: "https://github.com/ToonSupakit/NetSentinelAI-Network",
     videoUrl: "/videos/clip-ai-network.mp4",
@@ -54,7 +52,6 @@ const projects = [
       "Air Pollution Monitoring: Measures PM2.5, CO2, flammable gas/smoke, temperature, and humidity from multiple sensors simultaneously",
       "Real-time Update: Sensor data is pushed to the Web Dashboard via WebSocket (Socket.IO) without page refresh",
       "Automated Fan Control: Automatically turns on the 5V DC ventilation fans when pollution exceeds the threshold and turns it off when air quality returns to normal, controlled via Relay Module",
-      "AQI Calculation: Calculates Air Quality Index based on US EPA standards and displays it on the Dashboard",
       "Data Logging & History: Continuously records sensor data to MySQL and displays PM2.5 history charts via Chart.js",
       "Smart Alerts: Shows on-screen alerts when PM2.5 reaches hazardous levels, with alert history logging"
     ],
