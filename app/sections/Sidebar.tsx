@@ -41,7 +41,7 @@ export default function Sidebar() {
         <div className="text-center sm:text-left pt-4 space-y-2">
           <div className="flex flex-wrap justify-center sm:justify-start items-center gap-x-2 text-sm text-slate-400 dark:text-slate-500">
             <a 
-              href="/resume.png"
+              href="/CV_Supakit_2026.png"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 hover:font-bold transition-all"
