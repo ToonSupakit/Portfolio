@@ -18,6 +18,7 @@ const projects = [
     ],
     githubUrl: "https://github.com/ToonSupakit/HQ-Branch-Network-Topology-Design",
     videoUrl: "/videos/cild-cisco.mp4",
+    imageUrl: "/topology-hq-branch.png",
   },
   {
     title: "Network Monitoring & Automation System",
