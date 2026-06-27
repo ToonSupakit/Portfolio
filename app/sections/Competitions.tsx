@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Trophy, Shield, Calendar, Globe } from "lucide-react";
 import { AnimatedSection } from "@/components/animated-section";
 
 const activities = [
@@ -141,45 +140,37 @@ export default function Competitions() {
               {/* Header Info */}
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
                 <div className="flex items-center gap-3">
-                  <Trophy className="w-6 h-6 text-yellow-500" />
                   <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-100">
                     {activity.title}
                   </h3>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
-                  <Calendar className="w-4 h-4" />
                   <span>{activity.date}</span>
                 </div>
               </div>
 
               {/* Sub-Header Metadata */}
               <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-4 text-sm text-slate-500 dark:text-slate-400">
-                <span className="flex items-center gap-1.5 font-medium text-slate-700 dark:text-slate-300">
-                  <Shield className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                <span className="font-medium text-slate-700 dark:text-slate-300">
                   {activity.role}
                 </span>
                 <span>•</span>
-                <span className="flex items-center gap-1.5">
-                  <Globe className="w-4 h-4" />
+                <span>
                   {activity.organization}
                 </span>
               </div>
 
               {/* Technical Skills Covered */}
-              <div className="mb-4">
-                <h4 className="text-sm font-semibold text-slate-800 dark:text-slate-200 uppercase tracking-wider mb-2">
-                  Technical Skills Covered
-                </h4>
-                <div className="flex flex-wrap gap-2">
-                  {activity.skills.map((skill, i) => (
-                    <span
-                      key={i}
-                      className="px-3 py-1 text-xs font-medium text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 rounded-full border border-slate-200 dark:border-slate-800"
-                    >
-                      {highlightTech(skill)}
-                    </span>
-                  ))}
-                </div>
+              <div className="mb-4 text-sm text-slate-600 dark:text-slate-400">
+                <span className="font-semibold text-slate-800 dark:text-slate-200 uppercase tracking-wider mr-2">
+                  Technical Skills Covered:
+                </span>
+                {activity.skills.map((skill, i) => (
+                  <span key={i}>
+                    {highlightTech(skill)}
+                    {i < activity.skills.length - 1 && ", "}
+                  </span>
+                ))}
               </div>
 
               {/* Key Activities */}
