@@ -2,6 +2,7 @@ import Header from "./sections/Header";
 import Sidebar from "./sections/Sidebar";
 import TechStack from "./sections/TechStack";
 import Projects from "./sections/Projects";
+import Competitions from "./sections/Competitions";
 import Certificates from "./sections/Certificates";
 import Education from "./sections/Education";
 import Contact from "./sections/Contact";
@@ -26,6 +27,9 @@ export default function Home() {
             </div>
             <div className="py-10">
               <Projects />
+            </div>
+            <div className="py-10">
+              <Competitions />
             </div>
             <div className="py-10">
               <Certificates />
